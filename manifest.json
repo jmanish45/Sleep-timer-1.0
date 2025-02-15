@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "manifest_version": 3,
     "name": " Auto Pause Video",
@@ -13,20 +12,4 @@
     },
     "host_permissions": ["<all_urls>"]
   }
-=======
-{
-    "manifest_version": 3,
-    "name": " Auto Pause Video",
-    "version": "1.0",
-    "description": "Pauses videos on any websites 10 seconds after clicking the extension icon.",
-    "permissions": ["scripting", "activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_title": "Pause  Video"
-    },
-    "host_permissions": ["<all_urls>"]
-  }
->>>>>>> b2d5ea6caaca9d6b851d860814c9de767c196066
   
