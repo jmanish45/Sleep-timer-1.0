@@ -1,15 +1,20 @@
 {
-    "manifest_version": 3,
-    "name": " Auto Pause Video",
-    "version": "1.0",
-    "description": "Pauses videos on any websites 10 seconds after clicking the extension icon.",
-    "permissions": ["scripting", "activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_title": "Pause  Video"
-    },
-    "host_permissions": ["<all_urls>"]
-  }
-  
+  "manifest_version": 3,
+  "name": "Auto Pause Video",
+  "version": "1.0",
+  "description": "Pauses videos on any website for given time after clicking the extension icon.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Set Auto Pause time for Video",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}
